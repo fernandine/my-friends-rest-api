@@ -1,6 +1,6 @@
 Após eu publicar como podemos ser produtivos no desenvolvimento de APIs Rest com Spring Boot, algumas pessoas me pediram para criar um projeto contemplando o padrão que é mais utilizado em grande parte dos projetos corporativos e como compreender as camadas de uma aplicação.
 
-Para ilustrar eu criei esta aplicação para ilustrar o cadastros de amigos, email e telefones realizando operações como:
+Para ilustrar eu criei esta aplicação com a finalidade de realizar o cadastro de amigos, email e telefones realizando operações como:
 
 
 
@@ -8,7 +8,7 @@ Recursos:
 
 
 
-POST : friends - > Adicionar um friend
+POST : friends - > Adiciona um friend
 
 PUT : friends/1 -> Altera um friend pelo ID
 
@@ -30,21 +30,19 @@ Camadas:
 
 
 
-config: configuração e beans manuais do projeto como Model Mapper e Open API
+1. config: configuração e beans manuais do projeto como Model Mapper e Open API
 
+2. infra: configuração do recusos comuns da aplicação como exceções globais
 
+3. model: classes de modelo da aplicação
 
-1. infra: configuração do recusos comuns da aplicação como exceções globais
+4. dto: camada de tráfego de dados da aplicação
 
-2. model: classes de modelo da aplicação
+5. repository: recursos de acesso a dados em uma base relacional da aplicação
 
-3. dto: camada de tráfego de dados da aplicação
+6. service: camada de regra de negócios da aplicação
 
-4. repository: recursos de acesso a dados em uma base relacional da aplicação
-
-5. service: camada de regra de negócios da aplicação
-
-6. controller: serviços http baseados na arquitetura REST
+7. controller: serviços http baseados na arquitetura REST
 
 
 
