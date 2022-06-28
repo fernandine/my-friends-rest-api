@@ -41,8 +41,6 @@ Api para testar operações de CRUD comuns em APIs REST que pode ser consumida p
 
 
 #### Funcionalidades
-Download do arquivo para o Postman
-[builders.postman_collection.json](https://github.com/glysns/builders-cadastro-friend/blob/main/doc/builders.postman_collection.json "download")
 1. Inclusão de friend
 ```
 POST: http://localhost:8080/friends
