@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class FriendsApplication {
+public class MyFriendsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FriendsApplication.class, args);
+		SpringApplication.run(MyFriendsApplication.class, args);
 	}
 	@Bean
 	public CommandLineRunner run(FriendService bean) throws Exception {

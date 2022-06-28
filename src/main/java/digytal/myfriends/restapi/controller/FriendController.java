@@ -48,11 +48,11 @@ public class FriendController {
     public ResponseEntity getOne(@PathVariable("id") Integer id){
         return ResponseEntity.ok().body(service.findOne(id));
     }
-    @GetMapping("/{id}/endereco")
+    @GetMapping("/{id}/address")
     public ResponseEntity getAddress(@PathVariable("id") Integer id){
         return ResponseEntity.ok().body(service.findEndereco(id));
     }
-    @PatchMapping("/{id}/endereco")
+    @PatchMapping("/{id}/address")
     public ResponseEntity updateAddress(@PathVariable("id") Integer id, @RequestBody Address address){
         service.updateEndereco(id, address);
         return ResponseEntity.ok().body(null);

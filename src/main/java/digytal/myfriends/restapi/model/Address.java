@@ -6,64 +6,53 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class Address {
     @Column(nullable = false, length = 10)
-    private String cep;
+    private String zipCode;
     @Column(nullable = false, length = 50)
-    private String logradouro;
+    private String street;
     @Column(nullable = false, length = 6)
-    private String numero;
-    @Column(nullable = false, length = 40)
-    private String bairro;
+    private String number;
     @Column(nullable = false, length = 70)
-    private String cidade;
+    private String city;
     @Column(nullable = false, length = 2)
-    private String uf;
+    private String state;
 
-    public String getCep() {
-        return cep;
+    public String getZipCode() {
+        return zipCode;
     }
 
-    public void setCep(String cep) {
-        this.cep = cep;
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
     }
 
-    public String getLogradouro() {
-        return logradouro;
+    public String getStreet() {
+        return street;
     }
 
-    public void setLogradouro(String logradouro) {
-        this.logradouro = logradouro;
+    public void setStreet(String street) {
+        this.street = street;
     }
 
-    public String getNumero() {
-        return numero;
+    public String getNumber() {
+        return number;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
-    public String getBairro() {
-        return bairro;
+    public String getCity() {
+        return city;
     }
 
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
+    public void setCity(String city) {
+        this.city = city;
     }
 
-    public String getCidade() {
-        return cidade;
+    public String getState() {
+        return state;
     }
 
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
+    public void setState(String state) {
+        this.state = state;
     }
-
-    public String getUf() {
-        return uf;
-    }
-
-    public void setUf(String uf) {
-        this.uf = uf;
-    }
-
 }
