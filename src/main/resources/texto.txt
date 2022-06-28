@@ -1,0 +1,28 @@
+Após eu publicar como podemos ser produtivos no desenvolvimento de APIs Rest com Spring Boot, algumas pessoas me pediram para criar um projeto contemplando o padrão que é mais utilizado em grande parte dos projetos corporativos e como compreender as camadas de uma aplicação.
+Para ilustrar eu criei esta aplicação para ilustrar o cadastros de amigos, email e telefones realizando operações como:
+
+POST:friends - > Adicionar um friend
+PUT:friends/1 -> Altera um friend pelo ID
+DELETE:friends/1 -> Remove um friend pelo ID
+GET:friends -> Lista todos os friends
+GET:friends/1 -> Busca um friend por ID
+GET:friends/1/address -> Localiza o address de um friend
+PATCH:friends/1/address -> Altera o address de um friend
+GET:friends/search?name=GLEYSON&page=0&size=3 -> Lista todos os friends com filtro e paginação
+
+
+Etapas:
+
+1. Diagrame modelo do teu projeto com UML
+2. Estude as principais anotações em JPA
+3. Conheça as principais anotações do Spring Boot Core e Web
+4. Revise os conceitos de MVC
+5. Implemente a API com o nível de maturidade das APIs REST.
+6. Estude sobre Hibernate / Spring Data JPA e Paginação
+
+
+Você pode usar esta API para praticar e evoluir seus conhecimentos também em frontend comunicando-se com banckend via REST
+
+Link do github: https://github.com/glysns/my-friends-rest-api
+
+#digytal #java #spring #rest #api
